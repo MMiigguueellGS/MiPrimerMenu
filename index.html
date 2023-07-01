@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="container">
+      <a href="#" class="logo">Logo</a>
+      <div class="menu">
+        <ul id="menu" class="menu-list">
+          <li class="menu-item">
+            <a href="#" class="menu-link">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#about" class="menu-link">Sobre</a>
+          </li>
+          <li class="menu-item">
+            <a href="#contact" class="menu-link">Contacto</a>
+          </li>
+          <li class="menu-item">
+            <a href="#services" class="menu-link">Servicios</a>
+          </li>
+        </ul>
+      </div>
+
+      <button id="button" type="button" class="btn">
+        <i class='bx bx-menu'></i>
+      </button>
+    </nav>
+  </header>
+ <main class="main" id="parrafo">
+   <section id="about">
+     <h2>Sobre Mi</h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veniam a eos cupiditate aut vitae modi reiciendis distinctio, placeat quia sit ipsam ab culpa ratione assumenda cum exercitationem possimus quibusdam?</p>
+     <button type="">contactame</button>
+    </section>
+    <section id="contact">
+      <h2>Sobre Mi</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam quia porro ratione, nihil magni cumque quo! Necessitatibus natus facilis reiciendis nesciunt, molestiae obcaecati deleniti repudiandae consectetur eaque dolores delectus.</p>
+    </section>
+    <section  id="services">
+      <h2>Servicio</h2>
+      <img src="https://agenda-citas.unah.edu.hn/assets/welcome/img/about-img.svg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, recusandae. Praesentium dolore nostrum accusantium delectus ipsam eaque! Optio possimus rem magni incidunt! Molestiae quidem blanditiis excepturi minima doloremque! Reprehenderit, illum?</p>
+    </section>
+ 
+ </main>
+ <script>
+  const button=document.getElementById('button');
+  const menu=document.getElementById('menu');
+  const parrafo=document.getElementById('parrafo')
+  button.addEventListener('click',function(){
+    menu.classList.toggle('show');
+    parrafo.classList.toggle('main-left')
+
+  });
+  menu.addEventListener('click',function(event){
+    if(event.target.classList.contains('menu-link')){
+      menu.classList.remove('show')
+
+    }})
+  
+ </script>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
